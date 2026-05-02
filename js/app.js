@@ -2,6 +2,7 @@
 
 const App = {
   currentView: 'dashboard',
+  _isStarted: false,
 
   async init() {
     // Show loading
@@ -33,6 +34,9 @@ const App = {
   },
 
   async _startApp(user) {
+    if (this._isStarted) return;
+    this._isStarted = true;
+
     await Store.init(user.id);
     Store.onChange(() => this.refreshAll());
     this._bindNav();
