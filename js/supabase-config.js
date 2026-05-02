@@ -2,7 +2,7 @@
    Replace these with your Supabase project credentials.
    Find them at: https://supabase.com/dashboard → Project → Settings → API */
 
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://nlghhscykwhgzlkvpxus.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_ZqHHgr_4QD44txZjxWWC4g_I6-vAAgz';
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
